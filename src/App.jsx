@@ -1,10 +1,12 @@
-import reactLogo from "./assets/react.svg";
 import AppSeguro from "./components/AppSeguro";
+import { CotizadorProvider } from "./context/CotizadorProvider";
 
 function App() {
   return (
     <div>
-      <AppSeguro />
+      <CotizadorProvider>
+        <AppSeguro />
+      </CotizadorProvider>
     </div>
   );
 }
