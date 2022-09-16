@@ -1,15 +1,17 @@
-import { createContext } from "react";
+import { createContext, useState } from "react";
 
 const CotizadorContex = createContext();
 
-const hola = "holmundo";
-const fholamundo = () => {
-  console.log("hola desde la funcion");
-};
 // provider donde vienen los datos
 const CotizadorProvider = ({ children }) => {
+  const [modal, setModal] = useState(false);
+  // 2forma
+  // funcion intermedia
+  const cambiarState = () => {
+    setModal(!modal);
+  };
   return (
-    <CotizadorContex.Provider value={{ hola: hola, fholamundo }}>
+    <CotizadorContex.Provider value={{ modal, cambiarState }}>
       {children}
     </CotizadorContex.Provider>
   );
