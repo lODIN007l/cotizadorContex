@@ -4,16 +4,8 @@ const CotizadorContex = createContext();
 
 // provider donde vienen los datos
 const CotizadorProvider = ({ children }) => {
-  const [modal, setModal] = useState(false);
-  // 2forma
-  // funcion intermedia
-  const cambiarState = () => {
-    setModal(!modal);
-  };
   return (
-    <CotizadorContex.Provider value={{ modal, cambiarState }}>
-      {children}
-    </CotizadorContex.Provider>
+    <CotizadorContex.Provider value={{}}>{children}</CotizadorContex.Provider>
   );
 };
 
