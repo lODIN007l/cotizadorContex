@@ -17,7 +17,9 @@ Sitio desarrollado en base a el comportamiento con Context
     Hooks
     Styles
   
-  
+  ##Deploy
+   realizado via Vercel: https://cotizador-contex.vercel.app/
+   
   
   
 realizado por : Wilson Lluilema
